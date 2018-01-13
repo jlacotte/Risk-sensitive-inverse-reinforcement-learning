@@ -1,5 +1,7 @@
 # RISK-SENSITIVE INVERSE REINFORCEMENT LEARNING VIA SEMI- AND NON-PARAMETRIC METHODS 
+
 Collaborators: Sumeet Singh, Anirudha Majumdar and Marco Pavone
+
 Link to paper: https://arxiv.org/abs/1711.10055
 
 The directory contains the scripts and data to reproduce the results presented in the paper:
