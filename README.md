@@ -1,4 +1,5 @@
-########## RISK-SENSITIVE INVERSE REINFORCEMENT LEARNING VIA SEMI- AND NON-PARAMETRIC METHODS ###########
+# RISK-SENSITIVE INVERSE REINFORCEMENT LEARNING VIA SEMI- AND NON-PARAMETRIC METHODS 
+(Collaborators: Sumeet Singh, Anirudha Majumdar and Marco Pavone)
 
 The directory contains the scripts and data to reproduce the results presented in the paper:
 - Learn the risk-envelope of participants from the driving-simulation game, for single-stage or multi-stage decision problems
@@ -6,9 +7,9 @@ The directory contains the scripts and data to reproduce the results presented i
 - Compute the prediction errors on the test set
 - Visualize the results of some participants that present typical behaviors (highly risk-averse or risk-seeking)
 
-##############################################################
-########## USAGE
-##############################################################
+
+# USAGE
+
 1 - Risk-sensitive model learning: RSIRL.m
 	Name of participant: set name_str = 'some_participant' ('p2' by default, risk-averse participant)
 	Number of decision stages: set N=1 (single decision stage) or N=2 (two decision stages). By default, N=2.
@@ -32,9 +33,9 @@ The directory contains the scripts and data to reproduce the results presented i
 	Case-study #2: run /Data/Inference/Performance/rs_participant_analysis.m
 	Case-study #3: run /Data/Inference/Performance/rn_participant_analysis.m
 
-##############################################################
-### Data
-##############################################################
+
+# DATAA
+
 Data recorded from the driving-simulation experiments are located in '/Data'. Data are already split into training and test sets.
 For each participant (p1 to p10), the directory contains:
 - 'robot_data_10Hz_p1_train.mat': the states and actions of the robot (at 10Hz) in participant p1's experiment.
@@ -43,16 +44,14 @@ For each participant (p1 to p10), the directory contains:
 NB: We record twice the data of the robot for the following reasons: for learning purposes, we prefer to use 'robot_data_10Hz_p1_train.mat' since the robot's trajectory generated prior to the experiments (and hence more precise); then we need to align generated robot's data and human's recorded data (by tuning the variable k_delay)
 - 'human_robot_data_p1_test.mat': same as previously but for testing.
 
-##############################################################
-########## Learning
-##############################################################
+# LEARNING
+
 RSIRL.m (risk-sensitive model) run the semi-parametric algorithm of the paper. 
 The gradient-based algorithm is implemented in subgradientdescent.m
 
 
-##############################################################
-########## Dependencies
-##############################################################
+# DEPENDENCIES
+
 - Matlab
 - Multi-Parametric Toolbox 3.0
 - Mosek solver
