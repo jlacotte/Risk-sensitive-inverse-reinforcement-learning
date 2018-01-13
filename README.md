@@ -34,7 +34,7 @@ The directory contains the scripts and data to reproduce the results presented i
 	Case-study #3: run /Data/Inference/Performance/rn_participant_analysis.m
 
 
-# DATAA
+# DATA
 
 Data recorded from the driving-simulation experiments are located in '/Data'. Data are already split into training and test sets.
 For each participant (p1 to p10), the directory contains:
