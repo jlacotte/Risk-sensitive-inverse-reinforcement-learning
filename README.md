@@ -1,5 +1,5 @@
 # RISK-SENSITIVE INVERSE REINFORCEMENT LEARNING VIA SEMI- AND NON-PARAMETRIC METHODS 
-(Collaborators: Sumeet Singh, Anirudha Majumdar and Marco Pavone)
+Collaborators: Sumeet Singh, Anirudha Majumdar and Marco Pavone
 
 The directory contains the scripts and data to reproduce the results presented in the paper:
 - Learn the risk-envelope of participants from the driving-simulation game, for single-stage or multi-stage decision problems
